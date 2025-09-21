@@ -1,11 +1,11 @@
 name: Generate Snake Animation
 permissions:
-  contents: write   # ✅ allows the workflow to push new branches/commits
+  contents: write
 
 on:
   schedule:
-    - cron: "0 */12 * * *"   # runs every 12 hours
-  workflow_dispatch:          # lets you run manually
+    - cron: "0 */12 * * *"
+  workflow_dispatch:
   push:
     branches:
       - main
@@ -23,7 +23,7 @@ jobs:
         uses: Platane/snk@v3
         with:
           github_user_name: denisthuo425-jude
-          svg_out_path: dist/snake.svg
+          outputs: dist/snake.svg
 
       - name: Commit & push snake to output branch
         uses: EndBug/add-and-commit@v9
@@ -32,5 +32,5 @@ jobs:
           author_email: 41898282+github-actions[bot]@users.noreply.github.com
           message: "chore: update snake animation"
           add: "dist/snake.svg"
-          default_branch: output
+          new_branch: output
           push: origin output --set-upstream
