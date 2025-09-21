@@ -1,0 +1,40 @@
+name: Generate Snake Animation
+# workflow needs write permission to push the generated file back
+permissions:
+  contents: write
+
+on:
+  schedule:              # run every 12 hours (optional)
+    - cron: "0 */12 * * *"
+  workflow_dispatch:     # allows manual run from Actions tab
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Generate snake SVG
+        # Platane/snk generates an animated snake (svg or gif) from your contributions grid
+        uses: Platane/snk@v3
+        with:
+          # replace with your GitHub username (or keep as shown)
+          github_user_name: denisthuo425-jude
+          # path where the action will output the generated file
+          svg_out_path: dist/snake.svg
+
+      - name: Commit & push snake to 'output' branch
+        uses: EndBug/add-and-commit@v9
+        with:
+          author_name: github-actions
+          author_email: 41898282+github-actions[bot]@users.noreply.github.com
+          message: "chore: update snake animation"
+          add: "dist/snake.svg"
+          # push argument becomes: git push origin output --set-upstream
+          push: "origin output --set-upstream"
