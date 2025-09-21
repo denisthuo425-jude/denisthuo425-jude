@@ -1,16 +1,18 @@
 ## Hi there 👋
 
-<!--
-**denisthuo425-jude/denisthuo425-jude** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+I’m **Denis Thuo**, a passionate Computer Science student and developer.  
+I enjoy building projects around **web development, business intelligence, and cybersecurity**, and I’m always exploring new technologies.
 
-Here are some ideas to get you started:
+- 🔭 I’m currently working on improving a few projects. You can find me on [portfolio website](https://denisthuo425-jude.github.io/thuo-portfolio/).  
+- 🌱 I’m learning advanced data analytics and API integrations.  
+- 👯 I’m looking to collaborate on open-source or innovative projects.  
+- 💬 Ask me about **PHP, JavaScript, Python**, or **system design**.  
+- 📫 How to reach me: [GitHub Issues](https://github.com/denisthuo425-jude) or my portfolio.  
+- ⚡ Fun fact: I enjoy mixing tech with a bit of creativity — like this snake 🐍.  
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+---
+
+### 🐍 My GitHub Contribution Snake
+![github contribution grid snake](https://raw.githubusercontent.com/denisthuo425-jude/denisthuo425-jude/output/dist/snake.svg)
+
+---
